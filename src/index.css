@@ -1,0 +1,104 @@
+:root{
+	--primary-black-color: #1f1f1f;
+	--primary-white-color: #f1f1f1;
+	--primary-orange-color: #fe5f2f;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: var(--primary-white-color);
+}
+
+.navbar {
+	width: 100%;
+	height: 80px;
+	background-color: var(--primary-black-color);
+	font-family: 'Libre Franklin', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	display: flex; flex-direction: row;
+}
+.navbar h2 {
+	width: 30%; height: 100%;
+	display: flex; justify-content: left;
+	padding-left: 30px;
+	align-items: center;
+	font-style: italic;
+	color: var(--primary-orange-color);
+}
+.navbar section {
+	width: 70%; height: 100%;
+	align-items: center;
+	padding-right: 30px;
+	display: flex; 
+	justify-content: right;
+	flex-direction: row;
+}
+
+.container-search {
+	width: 40%; height: 40px;
+	display: flex; justify-content: right;
+	border-color: var(--primary-white-color);
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+}
+.input-search {
+	width: 100%;
+	height: 100%;
+	outline: 0;
+	padding-left: 10px;
+	color: var(--primary-white-color);
+	border-radius: 5px; border: none;
+	background-color: var(--primary-black-color);
+}
+.btn-search {
+	width: 40px; height: 100%;
+	cursor: pointer;
+	border-style: none;
+	border-left-style: solid;
+	border-color: #cccccc;
+	outline: 0;
+	color: var(--primary-white-color);
+	border-radius: 5px;
+	background-color: var(--primary-black-color);
+}
+.btn-search:hover {
+	color: var(--primary-orange-color);
+}
+
+.container-icons {
+	width: 60%; height: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	gap: 10px;
+}
+.container-icon {
+	width: 60px; height: 40px;
+	font-size: 1.3rem;
+	display: flex;
+	justify-content: center; align-items: center;
+	color: var(--primary-white-color);
+	cursor: pointer;
+	flex-direction: column;
+	text-align: center;
+}
+.container-icon span {
+	font-size: 0.7rem;
+	display: none;
+}
+
+
+.container-icon:hover{
+	color: var(--primary-orange-color);
+	transform: scale(1.2);
+	transition-duration: 0.4s;
+}
+
+.container-icon:hover span{
+	display: block;
+}
